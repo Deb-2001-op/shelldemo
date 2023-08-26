@@ -1,0 +1,40 @@
+SQL - structured query language 
+
+There are primitive datatypes(fixed size) and non-primitive datatypes(dynamic size)
+
+Data Definition language(DDL) - CREATE ALTER DROP TRUNCATE
+
+Data Manipulation language(DML) - INSERT UPDATE 
+
+Data Query language(DQL) - SELECT
+
+WHERE is used for condition and AND & OR is used for extending the condition
+
+ORDER BY ASC/DESC
+
+select * takes information fromm all columns
+
+select LastName
+
+select LastName, Age
+
+insert into employee(LastName, Age) values("Ravi", 23)
+
+update employee set Designation = "software engineer" WHERE EmployeeId = 101 for updating existing data
+
+create a customer table with orderid, customer name , order price, order location,customer city
+7 customer data 
+write a query to fetch data of the customer whose order price is more than 500
+write a query to fetch the data of the customer where city is mumbai or pune
+
+
+SQL Joins
+
+Inner join
+Left join
+Right join
+
+
+Sub queries
+
+select LastName, Age, Designation from employee where EmployeeId in (select EmployeeId from employee2 where EmployeeId = 101)
